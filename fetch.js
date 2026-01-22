@@ -117,7 +117,10 @@ if (MEDIUM_USERNAME) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestFailedMedium);
+      console.warn(
+        `Warning: ${ERR.requestFailedMedium}. Continuing without Medium data.`
+      );
+      return;
     }
 
     res.on("data", d => {
@@ -132,7 +135,9 @@ if (MEDIUM_USERNAME) {
   });
 
   req.on("error", error => {
-    throw error;
+    console.warn(
+      `Warning: Failed to fetch Medium data: ${error.message}. Continuing without Medium data.`
+    );
   });
 
   req.end();
