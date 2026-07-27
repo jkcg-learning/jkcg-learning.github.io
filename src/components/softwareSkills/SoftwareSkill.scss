@@ -135,6 +135,20 @@
   height: 3rem;
 }
 
+.custom-icon-langgraph {
+  background: url("../../assets/icons/langgraph.png") no-repeat center center;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+}
+
+.custom-icon-azure {
+  background: url("../../assets/images/AzureLogo.png") no-repeat center center;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+}
+
 .custom-icon-streamlit {
   background: url("../../assets/icons/streamlit.png") no-repeat center center;
   background-size: contain;
@@ -175,6 +189,8 @@
 .dark-mode .custom-icon-scikit-learn,
 .dark-mode .custom-icon-huggingface,
 .dark-mode .custom-icon-langchain,
+.dark-mode .custom-icon-langgraph,
+.dark-mode .custom-icon-azure,
 .dark-mode .custom-icon-streamlit,
 .dark-mode .custom-icon-githubactions,
 .dark-mode .custom-icon-dvc {

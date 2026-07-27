@@ -12,7 +12,7 @@ export default function Footer() {
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           {emoji("Made with React ⚛️")}
           <br />
-          {emoji("© 2024-2024 jkcg.me")}
+          {emoji("© 2024-2026")}
         </p>
       </div>
     </Fade>

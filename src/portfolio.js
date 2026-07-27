@@ -40,9 +40,8 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/jkcg-learning",
   linkedin: "https://www.linkedin.com/in/jyothishchandrasenan/",
-  gmail: "contact@jkcg.me",
   medium: "https://medium.com/@jyothish-tech",
-  calendly: "https://calendly.com/contact-jkcg/30min/",
+  calendly: "https://calendly.com/jkcg/30min",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -103,7 +102,31 @@ const skillsSection = {
     },
     {
       skillName: "LangChain",
-      customClassname: "custom-icon-langchain" // Custom icon
+      customClassname: "custom-icon-langchain"
+    },
+    {
+      skillName: "LangGraph",
+      customClassname: "custom-icon-langgraph"
+    },
+    {
+      skillName: "Azure",
+      customClassname: "custom-icon-azure"
+    },
+    {
+      skillName: "Microsoft Foundry",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "MCP",
+      fontAwesomeClassname: "fas fa-plug"
+    },
+    {
+      skillName: "RAG",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "AI Agents",
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
       skillName: "FastAPI",
@@ -224,8 +247,8 @@ const techStack = {
       progressPercentage: "80%"
     },
     {
-      Stack: "NLP / LLM",
-      progressPercentage: "55%"
+      Stack: "NLP / LLM / Agents",
+      progressPercentage: "75%"
     },
     {
       Stack: "MLOps",
@@ -241,10 +264,17 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "AI Engineer",
+      company: "Diapason",
+      companylogo: require("./assets/images/diapasonLogo.png"),
+      date: "09/2024 – Present",
+      desc: "Paris, France"
+    },
+    {
       role: "Deep Learning Engineer",
       company: "Ryte AI",
       companylogo: require("./assets/images/ryteLogo.png"),
-      date: "09/2023 – 05/2024",
+      date: "09/2023 – 08/2024",
       desc: "Paris, France"
     },
     {
@@ -289,8 +319,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
 // Some big projects you have worked on
@@ -410,9 +440,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all."
-  //number: "+33-0000000000",
-  //email_address: "contact@jkcg.me"
+    "Discuss a project or just want to say hi? Book a call or reach out on LinkedIn."
 };
 
 // Twitter Section
