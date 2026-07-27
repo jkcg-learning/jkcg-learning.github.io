@@ -24,10 +24,10 @@ const greeting = {
   title: "Hey, I'm Jyothish",
   subTitle: [
     emoji(
-      "A passionate AI Engineer 🤖 with expertise in developing innovative solutions using Python, PyTorch & Tensorflow, along with a deep understanding of libraries and frameworks."
+      "Applied AI Engineer building production LLM systems, autonomous agents, and RAG pipelines with LangChain, LangGraph, and Azure."
     ),
     emoji(
-      "Skilled in handling Computer Vision 📷, NLP 📝, LLM 🧠 projects, proficient in MLOps 🔧 and cloud technologies ☁️."
+      "Experienced in Computer Vision, NLP, and the full MLOps / LLMOps lifecycle — from prototyping to reliable cloud deployment."
     )
   ],
   resumeLink:
@@ -52,16 +52,13 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "Crazy AI Engineer who enjoys exploring tech stacks related to AI and driving the latest innovations",
+    "I design and ship AI systems that work in production — agentic workflows, RAG applications, and ML platforms on Azure.",
   skills: [
-    emoji("⚡ Analyze complex data & derive insights"),
-    emoji("⚡ Clean & transform data"),
-    emoji("⚡ Train, fine-tune, & optimize AI models"),
-    emoji("⚡ Deploy AI models to cloud & edge"),
-    emoji("⚡ Integrate AI into existing applications & services"),
-    emoji(
-      "⚡ Leverage the groundbreaking models and architectures developed by AI researchers and innovators"
-    )
+    emoji("⚡ Build autonomous AI agents with LangChain, LangGraph, MCP, and tool calling"),
+    emoji("⚡ Design RAG pipelines for search, retrieval, and enterprise knowledge systems"),
+    emoji("⚡ Develop Computer Vision and NLP solutions with PyTorch and Hugging Face"),
+    emoji("⚡ Run MLOps / LLMOps on Azure — experiment tracking, evaluation, and deployment"),
+    emoji("⚡ Deliver production APIs with FastAPI, Docker, MLflow, and GitHub Actions")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -73,32 +70,20 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "SQL Database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
       skillName: "PyTorch",
-      customClassname: "custom-icon-pytorch" // Custom icon
+      customClassname: "custom-icon-pytorch"
     },
     {
       skillName: "TensorFlow",
-      customClassname: "custom-icon-tensorflow" // Custom icon
-    },
-    {
-      skillName: "Keras",
-      customClassname: "custom-icon-keras" // Custom icon
-    },
-    {
-      skillName: "Scikit-Learn",
-      customClassname: "custom-icon-scikit-learn" // Custom icon
+      customClassname: "custom-icon-tensorflow"
     },
     {
       skillName: "HuggingFace",
-      customClassname: "custom-icon-huggingface" // Custom icon
+      customClassname: "custom-icon-huggingface"
     },
     {
       skillName: "LangChain",
@@ -129,84 +114,36 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "FastAPI",
-      customClassname: "custom-icon-fastapi" // Custom icon
-    },
-    {
-      skillName: "Streamlit",
-      customClassname: "custom-icon-streamlit" // Custom icon
-    },
-    {
-      skillName: "Kubeflow",
-      customClassname: "custom-icon-kubeflow" // Custom icon
-    },
-    {
-      skillName: "GCP",
-      customClassname: "custom-icon-gcp" // Custom icon
-    },
-    {
       skillName: "OpenCV",
-      customClassname: "custom-icon-opencv" // Custom icon
+      customClassname: "custom-icon-opencv"
     },
     {
-      skillName: "NumPy",
-      customClassname: "custom-icon-numpy" // Custom icon
-    },
-    {
-      skillName: "Pandas",
-      customClassname: "custom-icon-pandas" // Custom icon
-    },
-    {
-      skillName: "Matplotlib",
-      customClassname: "custom-icon-matplotlib" // Custom icon
+      skillName: "FastAPI",
+      customClassname: "custom-icon-fastapi"
     },
     {
       skillName: "MLFlow",
-      customClassname: "custom-icon-mlflow" // Custom icon
+      customClassname: "custom-icon-mlflow"
     },
     {
       skillName: "DVC",
-      customClassname: "custom-icon-dvc" // Custom icon
+      customClassname: "custom-icon-dvc"
     },
     {
       skillName: "OpenAI",
-      customClassname: "custom-icon-openai" // Custom icon
+      customClassname: "custom-icon-openai"
     },
     {
       skillName: "GitHub Actions",
-      customClassname: "custom-icon-githubactions" // Custom icon
+      customClassname: "custom-icon-githubactions"
     },
     {
       skillName: "ONNX",
-      customClassname: "custom-icon-onnx" // Custom icon
+      customClassname: "custom-icon-onnx"
     },
     {
       skillName: "Triton",
-      customClassname: "custom-icon-triton" // Custom icon
-    },
-    {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "CSS3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "ReactJS",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "NodeJS",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "NPM",
-      fontAwesomeClassname: "fab fa-npm"
+      customClassname: "custom-icon-triton"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -239,20 +176,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Programming", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "LLM & Agents",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "MLOps / LLMOps",
+      progressPercentage: "85%"
     },
     {
       Stack: "Computer Vision",
       progressPercentage: "80%"
     },
     {
-      Stack: "NLP / LLM / Agents",
+      Stack: "NLP",
       progressPercentage: "75%"
-    },
-    {
-      Stack: "MLOps",
-      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
