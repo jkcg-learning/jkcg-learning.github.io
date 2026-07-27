@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jkcg.me/",
+  "homepage": "https://jkcg-learning.github.io",
   "name": "jyothish-portfolio",
   "version": "0.2.0",
   "private": true,
@@ -7,7 +7,6 @@
     "ajv": "^8.17.1",
     "colorthief": "^2.4.0",
     "dotenv": "^16.4.5",
-    "jest-canvas-mock": "^2.5.2",
     "lottie-react": "^2.4.0",
     "react": "^18.3.1",
     "react-calendly": "^4.3.1",
@@ -25,7 +24,7 @@
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
@@ -59,6 +58,7 @@
     "@babel/plugin-transform-private-methods": "^7.21.0",
     "@rollup/plugin-terser": "^0.3.0",
     "gh-pages": "^6.1.1",
+    "jest-canvas-mock": "^2.5.2",
     "prettier": "^3.3.3"
   },
   "overrides": {
