@@ -285,7 +285,7 @@ const workExperiences = {
       desc: "Paris, France"
     },
     {
-      role: "Research     Engineer",
+      role: "Research Engineer",
       company: "MinesParisTech",
       companylogo: require("./assets/images/minesLogo.png"),
       date: "03/2022 – 08/2022",
@@ -299,7 +299,7 @@ const workExperiences = {
       desc: "Paris, France"
     },
     {
-      role: "Analyst       ",
+      role: "Analyst",
       company: "Verizon",
       companylogo: require("./assets/images/verizonLogo.png"),
       date: "06/2016 – 01/2019",
@@ -320,7 +320,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true",
-  display: true
+  display: false
 };
 
 // Some big projects you have worked on

@@ -48,33 +48,37 @@ export default function ExperienceCard({cardInfo, isDark}) {
         />
       </div>
       <div className="experience-text-details">
-        <h5
-          className={
-            isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
-          }
-        >
-          {cardInfo.role}
-        </h5>
-        <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
+        <div className="experience-role-block">
+          <h5
+            className={
+              isDark
+                ? "experience-text-role dark-mode-text"
+                : "experience-text-role"
+            }
+          >
+            {cardInfo.role.trim()}
+          </h5>
+        </div>
+        <div className="experience-meta-block">
+          <h5
+            className={
+              isDark
+                ? "experience-text-date dark-mode-text"
+                : "experience-text-date"
+            }
+          >
+            {cardInfo.date}
+          </h5>
+          <p
+            className={
+              isDark
+                ? "experience-text-desc dark-mode-text"
+                : "experience-text-desc"
+            }
+          >
+            {cardInfo.desc}
+          </p>
+        </div>
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
