@@ -79,35 +79,6 @@ async function fetchGithubViaRest(username) {
   }
 
   const user = JSON.parse(userResponse.body);
-  const reposResponse = await httpsGet({
-    hostname: "api.github.com",
-    path: `/users/${encodeURIComponent(username)}/repos?per_page=100&sort=updated`,
-    port: 443,
-    method: "GET",
-    headers
-  });
-
-  const repos =
-    reposResponse.statusCode === 200 ? JSON.parse(reposResponse.body) : [];
-
-  const pinnedRepos = repos
-    .filter(repo => !repo.fork)
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 6)
-    .map(repo => ({
-      node: {
-        name: repo.name,
-        description: repo.description,
-        forkCount: repo.forks_count,
-        stargazers: {totalCount: repo.stargazers_count},
-        url: repo.html_url,
-        id: String(repo.id),
-        diskUsage: 0,
-        primaryLanguage: repo.language
-          ? {name: repo.language, color: null}
-          : null
-      }
-    }));
 
   return {
     data: {
@@ -117,8 +88,8 @@ async function fetchGithubViaRest(username) {
         avatarUrl: user.avatar_url,
         location: user.location,
         pinnedItems: {
-          totalCount: pinnedRepos.length,
-          edges: pinnedRepos
+          totalCount: 0,
+          edges: []
         }
       }
     }
@@ -134,28 +105,6 @@ async function fetchGithubViaGraphQL(username, token) {
     bio
     avatarUrl
     location
-    pinnedItems(first: 6, types: [REPOSITORY]) {
-      totalCount
-      edges {
-        node {
-          ... on Repository {
-            name
-            description
-            forkCount
-            stargazers {
-              totalCount
-            }
-            url
-            id
-            diskUsage
-            primaryLanguage {
-              name
-              color
-            }
-          }
-        }
-      }
-    }
   }
 }
 `
@@ -186,6 +135,11 @@ async function fetchGithubViaGraphQL(username, token) {
   if (payload.errors || !payload.data?.user) {
     throw new Error(ERR.requestFailed);
   }
+
+  payload.data.user.pinnedItems = {
+    totalCount: 0,
+    edges: []
+  };
 
   return payload;
 }

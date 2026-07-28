@@ -34,8 +34,7 @@ jobs:
         run: npm run build
         env:
           GITHUB_USERNAME: jkcg-learning
-          USE_GITHUB_DATA: "true"
-          REACT_APP_GITHUB_TOKEN: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
+          USE_GITHUB_DATA: "false"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
