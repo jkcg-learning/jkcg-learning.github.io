@@ -136,14 +136,42 @@
 }
 
 .custom-icon-langgraph {
-  background: url("../../assets/icons/langgraph.png") no-repeat center center;
+  background: url("../../assets/icons/langgraph.svg") no-repeat center center;
   background-size: contain;
   width: 3rem;
   height: 3rem;
 }
 
 .custom-icon-azure {
-  background: url("../../assets/images/AzureLogo.png") no-repeat center center;
+  background: url("../../assets/icons/azure.svg") no-repeat center center;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+}
+
+.custom-icon-anthropic {
+  background: url("../../assets/icons/anthropic.svg") no-repeat center center;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+}
+
+.custom-icon-vllm {
+  background: url("../../assets/icons/vllm.svg") no-repeat center center;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+}
+
+.custom-icon-ollama {
+  background: url("../../assets/icons/ollama.svg") no-repeat center center;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+}
+
+.custom-icon-terraform {
+  background: url("../../assets/icons/terraform.svg") no-repeat center center;
   background-size: contain;
   width: 3rem;
   height: 3rem;
@@ -179,6 +207,10 @@
 .dark-mode .custom-icon-triton,
 .dark-mode .custom-icon-onnx,
 .dark-mode .custom-icon-openai,
+.dark-mode .custom-icon-anthropic,
+.dark-mode .custom-icon-vllm,
+.dark-mode .custom-icon-ollama,
+.dark-mode .custom-icon-terraform,
 .dark-mode .custom-icon-kubeflow,
 .dark-mode .custom-icon-gcp,
 .dark-mode .custom-icon-mlflow,

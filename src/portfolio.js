@@ -24,10 +24,10 @@ const greeting = {
   title: "Hey, I'm Jyothish",
   subTitle: [
     emoji(
-      "Applied AI Engineer building production LLM systems, autonomous agents, and RAG pipelines with LangChain, LangGraph, and Azure."
+      "Applied AI Engineer building and shipping production AI systems — agentic applications, RAG pipelines, and cloud-deployed models."
     ),
     emoji(
-      "Experienced in Computer Vision, NLP, and the full MLOps / LLMOps lifecycle — from prototyping to reliable cloud deployment."
+      "Background in deep learning, NLP, computer vision, and machine learning, with end-to-end MLOps/LLMOps experience from experimentation and prototyping to scalable, monitored cloud deployment."
     )
   ],
   resumeLink:
@@ -52,13 +52,23 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "I design and ship AI systems that work in production — agentic workflows, RAG applications, and ML platforms on Azure.",
+    "I build reliable, production-ready AI systems with evaluation, guardrails, observability, and thoughtful cost–latency–quality tradeoffs — not just demos.",
   skills: [
-    emoji("⚡ Build autonomous AI agents with LangChain, LangGraph, MCP, and tool calling"),
-    emoji("⚡ Design RAG pipelines for search, retrieval, and enterprise knowledge systems"),
-    emoji("⚡ Develop Computer Vision and NLP solutions with PyTorch and Hugging Face"),
-    emoji("⚡ Run MLOps / LLMOps on Azure — experiment tracking, evaluation, and deployment"),
-    emoji("⚡ Deliver production APIs with FastAPI, Docker, MLflow, and GitHub Actions")
+    emoji(
+      "⚡ Build and ship production-grade agentic systems with LangChain, LangGraph, and MCP, using robust agent harnesses and durable orchestration runtimes."
+    ),
+    emoji(
+      "⚡ Design RAG pipelines for enterprise search, retrieval, and knowledge-grounded AI applications."
+    ),
+    emoji(
+      "⚡ Serve and optimize AI/ML models using vLLM, Ollama, ONNX, and NVIDIA Triton."
+    ),
+    emoji(
+      "⚡ Train custom NLP and computer vision models with PyTorch and Hugging Face when LLMs alone are not the right solution."
+    ),
+    emoji(
+      "⚡ Build and operate end-to-end MLOps and LLMOps workflows in the cloud, covering experiment tracking, evaluation, deployment, observability, and monitoring."
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -72,6 +82,10 @@ const skillsSection = {
     {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Terraform",
+      customClassname: "custom-icon-terraform"
     },
     {
       skillName: "PyTorch",
@@ -94,6 +108,22 @@ const skillsSection = {
       customClassname: "custom-icon-langgraph"
     },
     {
+      skillName: "OpenAI",
+      customClassname: "custom-icon-openai"
+    },
+    {
+      skillName: "Anthropic",
+      customClassname: "custom-icon-anthropic"
+    },
+    {
+      skillName: "vLLM",
+      customClassname: "custom-icon-vllm"
+    },
+    {
+      skillName: "Ollama",
+      customClassname: "custom-icon-ollama"
+    },
+    {
       skillName: "Azure",
       customClassname: "custom-icon-azure"
     },
@@ -114,10 +144,6 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "OpenCV",
-      customClassname: "custom-icon-opencv"
-    },
-    {
       skillName: "FastAPI",
       customClassname: "custom-icon-fastapi"
     },
@@ -130,12 +156,12 @@ const skillsSection = {
       customClassname: "custom-icon-dvc"
     },
     {
-      skillName: "OpenAI",
-      customClassname: "custom-icon-openai"
-    },
-    {
       skillName: "GitHub Actions",
       customClassname: "custom-icon-githubactions"
+    },
+    {
+      skillName: "OpenCV",
+      customClassname: "custom-icon-opencv"
     },
     {
       skillName: "ONNX",
@@ -204,7 +230,7 @@ const workExperiences = {
       role: "AI Engineer",
       company: "Diapason",
       companylogo: require("./assets/images/diapasonLogo.png"),
-      date: "09/2024 – Present",
+      date: "11/2024 – Present",
       desc: "Paris, France"
     },
     {
